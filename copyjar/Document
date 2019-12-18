@@ -1,3 +1,3 @@
 1、替换app.jar包
-2、修改app.conf 替换 PORT 监听端口
+2、修改app.conf 替换 PORT 监听端口,修改内存参数JVME
 3、执行build.sh

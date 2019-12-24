@@ -5,7 +5,7 @@
 . ./resource.conf
 kubectl create namespace $NS
 kubens $NS
-kubectl create secret docker-registry $NS-reg --docker-server=reg.esgcc.com.cn --docker-username=$NS --docker-password=$PASS --docker-email=$EM
+kubectl create secret docker-registry $NS-reg --docker-server=$DM --docker-username=$NS --docker-password=$PASS --docker-email=$EM
 config=`cat ./resource.conf`
 templ=`cat ./resource-temp.yam`
 printf "$config\ncat << EOF\n$templ\nEOF" | bash > $NS-resource.yaml

@@ -42,6 +42,8 @@ spec:
           limits:
             memory: $MEMORY
             cpu: $CPU
+  imagePullSecrets:
+  - name: $NS-reg
 ---
 apiVersion: v1
 kind:  Service

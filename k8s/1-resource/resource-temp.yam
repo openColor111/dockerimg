@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: $NS-resource
+  namespace: $NS
+spec:
+  hard:
+    requests.cpu: $CPU 
+    requests.memory: $MEM
+    limits.cpu: $CPU 
+    limits.memory: $MEM
